@@ -21,11 +21,11 @@ Give the object one property called "complain".
 "complain"'s value should be a method (a function) which logs the string "Meow!".
 */
 
-const object = "cat"
+const object = "cat";
 
 function complain() {
 
-}
+};
 
 //END OF QUESTION 1
 
@@ -38,6 +38,16 @@ Select the h3 from the HTML using the "querySelector" method and assign it to a 
 Change its innerHTML value to "Updated Heading".
 */
 
+/*
+const h3Heading = query.Selector("heading");
+
+function changeH3HeadingText () {
+    h3Heading.innerHTML = "Updated Heading"
+};
+*/
+
+
+
 //END OF QUESTION 2
 
 
@@ -45,6 +55,11 @@ Change its innerHTML value to "Updated Heading".
 //Question 3
 /*
 Use the style property on the "heading" variable from the question above to change its font size to "2em".
+*/
+/*
+function changeH3HeadingStyle () {
+    h3Heading.style.font = "2em"
+}
 */
 
 //END OF QUESTION 3
