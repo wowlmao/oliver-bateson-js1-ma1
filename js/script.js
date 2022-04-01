@@ -24,7 +24,7 @@ Select the h3 from the HTML using the querySelector method and assign it to a va
 Change its innerHTML value to Updated Heading.
 */
 
-let heading = document.querySelector("h3");
+const heading = document.querySelector("h3");
 console.log(heading);
 
 heading.innerHTML = "Updated Heading";
@@ -50,7 +50,9 @@ heading.style.fontSize = "2em"
 Add a class to the heading variable called subheading.
 */
 
-console.log(document);
+console.dir(heading.classList);
+
+heading.classList.add("subheading");
 
 //END OF QUESTION 4
 
@@ -64,7 +66,7 @@ Loop through the p elements and change the colour of each to "red".
 */
 
 
-let paragraphs = document.querySelectorAll("p");
+const paragraphs = document.querySelectorAll("p");
 
 for(let i = 0; i < paragraphs.length; i++) {
     console.dir(paragraphs[i].style.color = "red")
@@ -80,6 +82,12 @@ for(let i = 0; i < paragraphs.length; i++) {
 Select the div with a class of results, 
 assign it to a variable called resultsContainer and set its innerHTML to be <p>New paragraph</p> and its background colour to be yellow.
 */
+
+const resultsContainer = document.querySelector("div.results");
+
+console.log(resultsContainer.innerHTML);
+
+resultsContainer.innerHTML = "<p>New paragraph</p>";
 
 //END OF QUESTION 6
 
@@ -108,6 +116,9 @@ const cats = [
     }
 ];
 
+
+console.log(cats["name"])
+
 //END OF QUESTION 7
 
 
@@ -128,5 +139,9 @@ Call the function and pass in the cats array as the argument.
 
 Assign the return value of the function to the innerHTML property of the element on the HTML page with a class of cat-container.
 */
+
+function createCats () {
+
+};
 
 //END OF QUESTION 8
