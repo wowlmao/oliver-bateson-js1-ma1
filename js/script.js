@@ -24,11 +24,11 @@ Select the h3 from the HTML using the querySelector method and assign it to a va
 Change its innerHTML value to Updated Heading.
 */
 
-const h3Heading = document.querySelector("heading");
+let heading = document.querySelector("h3");
+console.log(heading);
 
-function changeH3HeadingText () {
-    h3Heading.innerHTML = "Updated Heading"
-};
+heading.innerHTML = "Updated Heading";
+
 
 //END OF QUESTION 2
 
@@ -39,9 +39,7 @@ function changeH3HeadingText () {
 Use the style property on the heading variable from the question above to change its font size to 2em.
 */
 
-function changeH3HeadingStyle () {
-    h3Heading.style.font = "2em"
-};
+heading.style.fontSize = "2em"
 
 //END OF QUESTION 3
 
@@ -52,11 +50,10 @@ function changeH3HeadingStyle () {
 Add a class to the heading variable called subheading.
 */
 
-
+console.log(document);
 
 //END OF QUESTION 4
 
-console.log(document);
 
 
 //Question 5
