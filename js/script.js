@@ -85,9 +85,9 @@ assign it to a variable called resultsContainer and set its innerHTML to be <p>N
 
 const resultsContainer = document.querySelector("div.results");
 
-console.log(resultsContainer.innerHTML);
-
 resultsContainer.innerHTML = "<p>New paragraph</p>";
+resultsContainer.style.backgroundColor = "yellow";
+
 
 //END OF QUESTION 6
 
@@ -116,8 +116,11 @@ const cats = [
     }
 ];
 
+function printList(list) {
+    console.log(list)
+};
 
-console.log(cats["name"])
+printList(cats);
 
 //END OF QUESTION 7
 
@@ -140,7 +143,7 @@ Call the function and pass in the cats array as the argument.
 Assign the return value of the function to the innerHTML property of the element on the HTML page with a class of cat-container.
 */
 
-function createCats () {
+function createCats(cats) {
 
 };
 
