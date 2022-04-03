@@ -117,7 +117,9 @@ const cats = [
 ];
 
 function printList(list) {
-    console.log(list)
+    for(let j = 0; j < list.length; j++) {
+        console.log(list[j])
+    }
 };
 
 printList(cats);
@@ -144,7 +146,29 @@ Assign the return value of the function to the innerHTML property of the element
 */
 
 function createCats(cats) {
+    
+    let html = "";
 
+    for(let k = 0; k < cats.length; k++) {
+
+        let catsAge = "Age unknown";
+
+        if(cats[k].age) {
+            catsAge = cats[k].age;
+        }
+
+        html += `<div class = "question-8">
+                    <h5>Name: ${cats[k].name}</h5>
+                    <p>Age: ${catsAge}</p>
+        </div>`;
+    }
+
+    return html;
 };
+
+const newHTML = createCats(cats);
+
+const question8 = document.querySelector("#question-8");
+question8.innerHTML = newHTML;
 
 //END OF QUESTION 8
