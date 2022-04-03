@@ -118,7 +118,7 @@ const cats = [
 
 function printList(list) {
     for(let j = 0; j < list.length; j++) {
-        console.log(list[j])
+        console.log(list[j].name)
     }
 };
 
@@ -157,7 +157,7 @@ function createCats(cats) {
             catsAge = cats[k].age;
         }
 
-        html += `<div class = "question-8">
+        html += `<div class = "cats">
                     <h5>Name: ${cats[k].name}</h5>
                     <p>Age: ${catsAge}</p>
         </div>`;
@@ -168,7 +168,7 @@ function createCats(cats) {
 
 const newHTML = createCats(cats);
 
-const question8 = document.querySelector("#question-8");
-question8.innerHTML = newHTML;
+const catContainer = document.querySelector(".cat-container");
+catContainer.innerHTML = newHTML;
 
-//END OF QUESTION 8
+
